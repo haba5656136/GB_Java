@@ -6,12 +6,20 @@ import java.util.Scanner;
  */
 public class TriangleNumbers {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Вычисляем n-ое треугольное число. Введите число n (от 1 до 46340):");
-        int n = in.nextInt();
-      
-        System.out.printf("n-ое треугольеон число = %d \n", CalcTriangeNum(n));
-        in.close();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Вычисляем n-ое треугольное число. Введите целое число n (от 1 до 46340):");
+        if (input.hasNextInt()) {
+            int n = input.nextInt();
+            if (n > 46340) {
+                System.out.println("Вы ввели слишком большое n (для этой программы)");    
+            } else {
+            System.out.printf("n-ое треугольеон число = %d \n", CalcTriangeNum(n));
+            }   
+        } else {
+            System.out.println("Вы ввели не целое число");
+        }
+
+        input.close();
     }
 
     static int CalcTriangeNum(int n) {

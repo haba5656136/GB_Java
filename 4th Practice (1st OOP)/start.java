@@ -24,6 +24,9 @@ public class start {
         manager1.addSubworker(personX);
         System.out.println("--- Менеджер 1 с 4 сотрудникам ---");
         System.out.println(manager1);
+        manager1.removeSubwoker(personX);
+        System.out.println("--- Менеджер 1 с 3 сотрудникам ---");
+        System.out.println(manager1);
     }
 }
 

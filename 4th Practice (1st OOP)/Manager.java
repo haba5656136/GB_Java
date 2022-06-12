@@ -14,9 +14,9 @@ public class Manager extends Employee {
         subworkers.add(employee);
     }
 
-   /*  public void removeSubrokerByName(String name) {
-
-    } */
+    public void removeSubwoker(Employee employee) {
+        subworkers.remove(employee);
+    }
 
     public String getSubworkers() {
         String result = "Подчинённые: {";

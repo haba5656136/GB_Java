@@ -7,7 +7,6 @@ public class Employee {
     private String surname;
     private String patronymic;
     private Integer standing;
-    //public Date dateOfEmployment;
     private String position;
     /**
      * Создаём сотрудника
